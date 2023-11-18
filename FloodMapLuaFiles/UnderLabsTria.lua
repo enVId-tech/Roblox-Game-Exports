@@ -56,6 +56,8 @@ MapLib:GetButtonEvent(5):Connect(function(player)
 		MapLib:MovePart(Map.Special.Moveables.DoorPart7, Vector3.new(5, 0, 0), 0.75, true)
 		MapLib:MovePart(Map.Special.Moveables.DoorPart8, Vector3.new(-5, 0, 0), 0.75, true)
 		MapLib:MovePartLocal(Map.Special.Liquids._Liquid2, Vector3.new(0, -17, 0), 0.25)
+	wait(2)
+		MapLib:MovePart(Map.Special.Moveables.BlastDoor, Vector3.new(0, -10.3, 0), 1.25, true)
 end)
 
 MapLib:GetButtonEvent(9):Connect(function(player)
@@ -70,21 +72,22 @@ end)
 
 --Self Activating Scripts
 
-wait(7.35)
+wait(7.30)
 	MapLib:MovePartLocal(Map.Special.Liquids._Liquid1, Vector3.new(0, 35, 0), 2.075)
-	MapLib:MovePart(Map.Special.Moveables.CloseDoor1, Vector3.new(0, 20, 0), 1.35, true)
+	MapLib:MovePart(Map.Special.Moveables.CloseDoor1, Vector3.new(0, 20, 0), 1.1, true)
 wait(2.05)
-	-- T+9.60
+	-- TCurrent+8.85
+	-- T+9.35
 	MapLib:MovePartLocal(Map.Special.Liquids._Liquid2, Vector3.new(0, 38, 0), 0.65)
 	MapLib:MovePartLocal(Map.Special.Liquids._Liquid3, Vector3.new(0, 1, 0), 1)
 wait(7)
 	-- T+17.60
 	MapLib:MovePart(Map.Special.Liquids._Liquid3, Vector3.new(0, 16, 0), 1)
-wait(5.5)
-	-- T+22.10
+wait(4.5)
+	-- T+21.10
 	MapLib:MovePartLocal(Map.Special.Liquids._Liquid3, Vector3.new(0, 30, 0), 5)
-	MapLib:MovePart(Map.Special.Moveables.MoveablesBlock2, Vector3.new(0, 10, 0), 1, true)
-wait(4.6)
+	MapLib:MovePart(Map.Special.Moveables.MoveablesBlock2, Vector3.new(0, 10, 0), 0.1, true)
+wait(5.6)
 	-- T+26.7
 	MapLib:MovePart(Map.Special.Moveables.DoorMove1, Vector3.new(0, 0, 6), 0.25, true)
 	MapLib:MovePart(Map.Special.Moveables.DoorMove2, Vector3.new(0, 0, 6), 0.25, true)
@@ -93,8 +96,8 @@ wait(4.6)
 	MapLib:MovePart(Map.Special.Moveables.DoorMove5, Vector3.new(0, 0, 6), 0.25, true)
 	MapLib:MovePart(Map.Special.Moveables.DoorMove6, Vector3.new(0, 0, 6), 0.25, true)
 	MapLib:MovePart(Map.Special.Moveables.DoorMove7, Vector3.new(0, 0, 6), 0.25, true)
-wait(0.5)
-	-- T+28.00
+wait(0.15)
+	-- T+26.85
 	MapLib:MovePartLocal(Map.Special.Liquids._Liquid2, Vector3.new(0, 62, 0), 1)
 	MapLib:MovePart(Map.Special.Moveables.MoveablesBlock1, Vector3.new(0, 9, 0), 0.1, true)
 wait(2)
